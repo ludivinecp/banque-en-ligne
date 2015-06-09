@@ -24,7 +24,7 @@ Pour chaques exercices, il doit y avoir un "admin side" permettant de realiser t
 
 ###Exercice01
 * Un utilisateur possède plusieurs comptes bancaires.
-* Un compte doit avoir un identifiant unique composée de 16 chiffres, et un libellé.
+* Un compte doit avoir un identifiant unique composé de 16 chiffres, et un libellé.
 * Dans son dashboard l'utilisateur à la liste de ses comptes, ainsi qu'un bouton lui permettant d'en crée
 
 ###Exercice02
@@ -46,6 +46,7 @@ Pour chaques exercices, il doit y avoir un "admin side" permettant de realiser t
 * Possibiliter de gérer les types d'epargne depuis le coté "admin"
 * Chaque epargne possède un libellé et un taux d'interet
 * Un bouton coté admin permettant de recevoir les interets sur le dit compte doit etre disponible du coté "admin"
+* L'admin crée les types d'epargnes. Un utilisateur ne peut choisir que parmis les epargnes disponible.
 
 ###Exercice05
 * Creation d'un conseillé
@@ -75,7 +76,4 @@ Pour chaques exercices, il doit y avoir un "admin side" permettant de realiser t
  * Liste des conseillés
  * Liste des attributions pour un conseillé donné
 
-*N'oublie pas les boutons d'actions ;)*
-
-
-#Bonne chance !
+#May the force be with you
