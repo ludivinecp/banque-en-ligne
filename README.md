@@ -1,11 +1,13 @@
 #CapSens HomeWork
-Tu disposes donc de ce depot pour ton devoir maison.
-Tu peux l'utiliser à ta guise. La seule convention à chaque exercice terminé. Tu dois effectuer un commit avec comme message "#ExerciceX Done" X etant le numero de l'exercice.  
-Exemple: tu fini l'exercice2. Ton commit devra avoir comme message "#Exercice2 Done".  
+Tu disposes donc de ce dépôt pour ton devoir maison. Tu peux l'utiliser à ta guise. La seule convention à chaque exercice terminé : effectuer un commit avec comme message "#ExerciceX Done" X étant le numéro de l'exercice.  
+Exemple: tu fini l'exercice2. Ton commit devra avoir comme message "#Exercice2 Done".
+
+
 Le but est de faire un maximum d'exercice et que ca marche. Si user-friendly c'est bien. Si c'est beau c'est mieux.
 
-* Les termes utiliser sont à interpreter comme si un client te parlais. A toi d'interpreter et developper ca le plus proche du besoin exprimé
-* Tu es libre d'utiliser les gems que tu souhaites.
+
+Les termes utilisés sont à interpréter comme si un client te parlait. A toi d'interpréter et développer ça le plus proche du besoin exprimé.  
+Tu es libre d'utiliser les gems que tu souhaites.  
 
 
 ##Base de Données
