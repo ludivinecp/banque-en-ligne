@@ -12,6 +12,19 @@ User.create ([{ nom: 'Coipel',
                 adresse: '45 avenue du Général de Gaulle, 75014 Paris',
                 email: 'coipel.ludivine@gmail.com',
                 password: 'capcapsens',
-                password_confirmation: 'capcapsens'
+                password_confirmation: 'capcapsens',
+                admin: true
 
       }])
+
+User.create ([{ nom: 'hedem',
+                prenom: 'bour',
+                sexe: 'masculin',
+                adresse: '3 rue joliot curie, la Loupe',
+                email: 'hedem.bour@gmail.com',
+                password: 'capcapsens',
+                password_confirmation: 'capcapsens',
+                admin: false
+
+      }])
+
