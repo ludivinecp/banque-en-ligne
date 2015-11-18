@@ -11,5 +11,7 @@ User.create ([{ nom: 'Coipel',
                 sexe: 'féminin',
                 adresse: '45 avenue du Général de Gaulle, 75014 Paris',
                 email: 'coipel.ludivine@gmail.com',
-                encrypted_password: 'capcapsens'
+                password: 'capcapsens',
+                password_confirmation: 'capcapsens'
+
       }])
