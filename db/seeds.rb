@@ -6,24 +6,24 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-User.create ([{ nom: 'Coipel',
-                prenom: 'Ludivine',
-                sexe: 'féminin',
-                adresse: '45 avenue du Général de Gaulle, 75014 Paris',
+User.create ([{ last_name: 'Coipel',
+                first_name: 'Ludivine',
+                is_female: true,
+                address: '45 avenue du Général de Gaulle, 75014 Paris',
                 email: 'coipel.ludivine@gmail.com',
-                password: 'capcapsens',
-                password_confirmation: 'capcapsens',
+                password: '12345678',
+                password_confirmation: '12345678',
                 admin: true
 
       }])
 
-User.create ([{ nom: 'hedem',
-                prenom: 'bour',
-                sexe: 'masculin',
-                adresse: '3 rue joliot curie, la Loupe',
-                email: 'hedem.bour@gmail.com',
-                password: 'capcapsens',
-                password_confirmation: 'capcapsens',
+User.create ([{ last_name: 'Alexandre',
+                first_name: 'bourg',
+                is_female: false,
+                address: '3 rue joliot curie, la Loupe',
+                email: 'alexandre.bourg@gmail.com',
+                password: '12345678',
+                password_confirmation: '12345678',
                 admin: false
 
       }])

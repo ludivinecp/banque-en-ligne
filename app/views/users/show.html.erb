@@ -3,7 +3,14 @@
 <h1>Mon profil</h1>
 
 <div>
-<%= @user.nom%></br>
-<%= @user.prenom%></br>
-<%= @user.adresse%></br>
+<%= @user.last_name.upcase%></br>
+<%= @user.first_name.capitalize%></br>
+  <%if @masculin %>
+    Masculin</br>
+  <%else%>
+    Féminin</br>
+  <%end%>
+<%= @user.address%></br>
 </div>
+
+<%=link_to "Modifier mes informations", edit_user_path(current_user.id)%>

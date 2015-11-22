@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'page#home'
   get 'show' => 'users#show'
+  get 'edit/:id' => 'users#edit'
   resources :page
   resources :users
 
