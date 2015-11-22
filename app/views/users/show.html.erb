@@ -2,17 +2,20 @@
 
 <h1>Mon profil</h1>
 
-
-<p><%= @user.try(:last_name)%></br>
-<%= @user.try(:first_name)%></br>
-  <%if @user.try(:@masculin) %>
-    Masculin</br>
+  <% if @user.first_name.nil? && @user.last_name.nil? && @user.address.nil? %>
+    <p>Merci de compléter votre profil <%= link_to "Go !", edit_user_path(current_user.id) %></p>
   <%else%>
-    Féminin</br>
+    <p><%= @user.try(:last_name)%></br>
+    <%= @user.try(:first_name)%></br>
+      <%if @user.try(:@masculin) %>
+        Masculin</br>
+      <%else%>
+        Féminin</br>
+      <%end%>
+    <%=link_to "Modifier mes informations", edit_user_path(current_user.id)%>
+
   <%end%>
 <%= @user.try(:address)%></br></p>
-
-<%=link_to "Modifier mes informations", edit_user_path(current_user.id)%>
 
 <hr>
 
