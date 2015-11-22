@@ -13,3 +13,19 @@
 <%= @user.try(:address)%></br></p>
 
 <%=link_to "Modifier mes informations", edit_user_path(current_user.id)%>
+
+<hr>
+
+<h2>Mes comptes</h2>
+
+<div>
+  <ul>
+  <% @comptes.each do |compte| %>
+    <li><%= compte.try(:libelle) %></br>
+        <%= compte.try(:identifiant) %></li> 
+  <%end%>
+  </ul>
+</div>
+
+
+<%=link_to "Créer un nouveau compte", new_path %>

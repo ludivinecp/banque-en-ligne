@@ -11,7 +11,44 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151117194424) do
+ActiveRecord::Schema.define(version: 20151122215418) do
+
+  create_table "accounts", force: :cascade do |t|
+    t.string   "identifier"
+    t.string   "title"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "accounts", ["user_id"], name: "index_accounts_on_user_id"
+
+  create_table "litigations", force: :cascade do |t|
+    t.string   "reason"
+    t.integer  "identifier"
+    t.string   "status"
+    t.boolean  "validate",        default: false
+    t.integer  "transactions_id"
+    t.integer  "account_id"
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+  end
+
+  add_index "litigations", ["account_id"], name: "index_litigations_on_account_id"
+  add_index "litigations", ["transactions_id"], name: "index_litigations_on_transactions_id"
+
+  create_table "transactions", force: :cascade do |t|
+    t.float    "amount"
+    t.string   "title"
+    t.boolean  "validate",          default: false
+    t.integer  "debit_account_id"
+    t.integer  "credit_account_id"
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
+  end
+
+  add_index "transactions", ["credit_account_id"], name: "index_transactions_on_credit_account_id"
+  add_index "transactions", ["debit_account_id"], name: "index_transactions_on_debit_account_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "first_name"
