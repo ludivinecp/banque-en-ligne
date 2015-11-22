@@ -1,3 +1,7 @@
 <h1>Bienvenue sur votre banque en ligne</h1>
 
-<%=link_to "Mon compte", show_path(@user)%>
+<% if user_signed_in? %>
+  <%=link_to "Mon compte", user_path(@user)%>
+<%else%>
+  <p>Merci de vous identifier pour accéder aux services en ligne</p>
+<%end%>

@@ -8,8 +8,6 @@
 
 User.create ([{ last_name: 'Coipel',
                 first_name: 'Ludivine',
-                is_female: true,
-                address: '45 avenue du Général de Gaulle, 75014 Paris',
                 email: 'coipel.ludivine@gmail.com',
                 password: '12345678',
                 password_confirmation: '12345678',
@@ -17,8 +15,8 @@ User.create ([{ last_name: 'Coipel',
 
       }])
 
-User.create ([{ last_name: 'Alexandre',
-                first_name: 'bourg',
+User.create ([{ last_name: 'Bourg',
+                first_name: 'Alexandre',
                 is_female: false,
                 address: '3 rue joliot curie, la Loupe',
                 email: 'alexandre.bourg@gmail.com',
