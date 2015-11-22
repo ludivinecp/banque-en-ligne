@@ -4,6 +4,7 @@ before_action :authenticate_user!
 def show
   @user = current_user
   @masculin = @user.is_female == false
+  @accounts = current_user.accounts
 end
 
 def edit
