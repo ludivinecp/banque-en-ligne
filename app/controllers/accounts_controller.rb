@@ -5,10 +5,10 @@ def new
 end
 
 def create
-@compte = Account.new(account_params)
+@account = Account.new(account_params)
   if @account.save
     flash[:notice] = "Votre compte a bien été ajouté"
-    redirect_to show_user_path(@compte.id)
+    redirect_to user_path(@account.id)
   else
     flash[:error] = "Il semble qu'il y ait une erreur dans votre saisie."
     render :new

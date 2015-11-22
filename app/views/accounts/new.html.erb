@@ -2,9 +2,9 @@
 
 <p>Entrez le libellé de votre nouveau compte, un identifiant lui sera automatiquement attribué.</p>
 
-<%=form_for (@compte) do |f|%>
+<%=form_for (@account) do |f|%>
   <%=f.label :Libellé%>
-  <%=f.text_field :libelle%>
+  <%=f.text_field :title%>
   <%= f.hidden_field :user_id, :value => current_user.id %>
   <%= f.submit "Submit"  %> 
 <%end%>

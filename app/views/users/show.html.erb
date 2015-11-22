@@ -20,9 +20,9 @@
 
 <div>
   <ul>
-  <% @comptes.each do |compte| %>
-    <li><%= compte.try(:libelle) %></br>
-        <%= compte.try(:identifiant) %></li> 
+  <% @accounts.each do |account| %>
+    <li><%= account.try(:title) %></br>
+        <%= account.try(:identifier) %></li> 
   <%end%>
   </ul>
 </div>
