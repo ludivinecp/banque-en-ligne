@@ -1,11 +1,6 @@
 <%=provide(:title, "Mon compte")%>
 
 <h1>Mon profil</h1>
-
-<<<<<<< HEAD
-
-=======
->>>>>>> exercice1
   <% if @user.first_name.nil? && @user.last_name.nil? && @user.address.nil? %>
     <p>Merci de compléter votre profil <%= link_to "Go !", edit_user_path(current_user.id) %></p>
   <%else%>
@@ -16,10 +11,6 @@
       <%else%>
         Féminin</br>
       <%end%>
-<<<<<<< HEAD
-  <%=link_to "Modifier mes informations", edit_user_path(current_user.id)%>
-  <%end%>
-=======
     <%=link_to "Modifier mes informations", edit_user_path(current_user.id)%>
 
   <%end%>
